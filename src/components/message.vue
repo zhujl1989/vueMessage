@@ -46,5 +46,10 @@ export default {
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 99999;
   }
 </style>

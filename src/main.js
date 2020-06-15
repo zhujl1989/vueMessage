@@ -3,8 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import message from '@/plugin/index'
+import upimg from '@/plugin/upimg'
 Vue.config.productionTip = false
 Vue.use(message)
+Vue.use(upimg)
 new Vue({
   router,
   store,
