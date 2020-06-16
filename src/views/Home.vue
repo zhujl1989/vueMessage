@@ -1,7 +1,7 @@
 <template>
   <div class="Home">
-    <div @click="getMess">消息弹窗</div>
-    <div @click="upImg">图片上传</div>
+    <div @click="getMess" class="btn">点击消息弹窗</div>
+    <div @click="upImg" class="btn">点击图片上传</div>
     <cropper-modal :title="title" ref="cropperModal" @ok="handleCropperSuccess"></cropper-modal>
    
   </div>
@@ -43,3 +43,16 @@ export default {
   }
 };
 </script>
+<style>
+.btn{
+  padding: 0 20px;
+  color: #fff;
+  background: #395ef3;
+  line-height: 40px;
+  font-size: 14;
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  
+}
+</style>

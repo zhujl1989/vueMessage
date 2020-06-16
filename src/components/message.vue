@@ -38,18 +38,19 @@ export default {
 
 <style scoped>
   .message{
-    width: 400px;
+    /* width: 400px; */
+    padding: 0 80px;
     line-height: 40px;
     text-align: left;
     margin: 10px auto;
-    background: #f0f9eb;
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     position: fixed;
-    top: 100px;
-    left: 50%;
-    margin-left: -200px;
+    top: 180px;
+    left: 46%;
     z-index: 99999;
+    color: #fff;
   }
 </style>
