@@ -7,12 +7,12 @@ Plugin.install = function(Vue){
     Vue.prototype.$uploadFile = function(url,data){  
         return new Promise(resolve=>{
             let xmlHttp = new XMLHttpRequest();
-           xmlHttp.open('post',url,true)          
+            xmlHttp.open('post',url,true)          
             xmlHttp.onload = function(){              
                 resolve(JSON.parse(xmlHttp.responseText))
             }
-           xmlHttp.setRequestHeader("token",Vue.cookie.get('token')); 
-           xmlHttp.open("post",'http://localhost:4000/postImg',true); 
+            xmlHttp.setRequestHeader("token",Vue.cookie.get('token')); 
+          // xmlHttp.open("post",'http://localhost:4000/postImg',true); 
             xmlHttp.send(data)
         })
     }
