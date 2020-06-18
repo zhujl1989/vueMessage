@@ -9,7 +9,7 @@ Plugin.install = function(Vue){
             let xmlHttp = new XMLHttpRequest();
            xmlHttp.open('post',url,true)          
             xmlHttp.onload = function(){              
-                resolve(xmlHttp.responseText)
+                resolve(JSON.parse(xmlHttp.responseText))
             }
            xmlHttp.setRequestHeader("token",Vue.cookie.get('token')); 
            xmlHttp.open("post",'http://localhost:4000/postImg',true); 
